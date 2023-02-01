@@ -1,0 +1,12 @@
+.header {
+    border-bottom: 1px solid $creamy-color;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        width: 1200px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+}

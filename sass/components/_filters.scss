@@ -1,0 +1,39 @@
+.filters {
+    &__list {
+        display: flex;
+        justify-content: center;
+        margin-top: 94px;
+        margin-bottom: 50px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        border: none;
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.7;
+        border-radius: 4px;
+        padding: 6px 22px;
+        transition-property: color background-color;
+        transition: $transition;
+    }
+    &__item {
+        color: $main-color;
+        background-color: $creamy-color;
+        margin-bottom: 34px;
+        padding: 0;
+        &:hover > .filters__btn,
+        &:focus > .filters__btn,
+        &:active > .filters__btn {
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            background-color: $brand-color;
+            color: $white-color;
+        }
+    }
+}
+
+.filters__list > .filters__item:not(:last-child) {
+    margin-right: 8px;
+}

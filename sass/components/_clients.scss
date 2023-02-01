@@ -1,0 +1,41 @@
+.clients {
+    margin-bottom: 94px;
+
+    &__header {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        color: $main-color;
+        margin-bottom: 50px;
+        margin-top: 94px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+        margin: 0;
+    }
+    &__item {
+        border: 1px solid $current-color;
+        border-radius: 3px;
+        fill: $current-color;
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid $brand-color;
+        }
+    }
+}
+.clients__item:hover .clients__icon,
+.clients__item:focus .clients__icon,
+.clients__item:active .clients__icon {
+    fill: $brand-color;
+}
+.clients__item svg {
+    border: $current-color;
+    fill: $current-color;
+    transition-property: fill border;
+    transition: $transition;
+}

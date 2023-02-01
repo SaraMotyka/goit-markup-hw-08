@@ -1,0 +1,125 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: $creamy-color;
+    padding: 0;
+    width: 1600px;
+    height: 708px;
+    margin-left: 0;
+
+    &__header {
+        width: 209px;
+        height: 42px;
+        margin-left: 690px;
+        margin-top: 94px;
+        margin-bottom: 50px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16em;
+        letter-spacing: 0.03em;
+        white-space: nowrap;
+    }
+    &__members {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        padding-bottom: 94px;
+        margin: 0;
+        justify-content: center;
+    }
+    &__list {
+        display: flex;
+        max-width: 270px;
+    }
+    &__description {
+        color: $text-color;
+        font-family: "Roboto";
+        font-size: 16px;
+        line-height: 1.8;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        background-color: $white-color;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+    &__box {
+        display: flex;
+
+        align-items: center;
+    }
+}
+.team__members > .team__list:not(:last-child) {
+    margin-right: 30px;
+}
+.photo {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.18;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 30px 0;
+
+    &__name {
+        font-family: "Roboto";
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.18;
+        color: $main-color;
+        margin-bottom: 10px;
+    }
+}
+.social {
+    display: flex;
+
+    &__list {
+        margin-top: 16px;
+    }
+
+    &__circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 50px;
+        padding: 12px;
+        background-color: $white-color;
+        transition-property: background-color;
+        transition: $transition;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $brand-color;
+        }
+    }
+
+    &__icon {
+        fill: $current-color;
+    }
+}
+.social__list:not(:last-child) {
+    margin-right: 10px;
+}
+.social__circle:hover > svg,
+.social__circle:focus > svg,
+.social__circle:active > svg {
+    fill: $white-color;
+}
+.social__circle > .social__icon {
+    transition-property: fill;
+    transition: $transition;
+}
+.social__icon:hover,
+.social__icon:focus,
+.social__icon:active {
+    fill: $white-color;
+}
+figure {
+    height: 428px;
+}

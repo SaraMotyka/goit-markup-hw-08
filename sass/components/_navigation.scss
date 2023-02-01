@@ -1,0 +1,68 @@
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        margin-right: 371px;
+    }
+    &__list {
+        font-family: "Roboto";
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14em;
+        color: $main-color;
+        width: 53px;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand-color;
+        }
+        display: flex;
+        align-items: center;
+    }
+
+    &__active:after {
+        content: "";
+        background-color: $brand-color;
+        border-radius: 2px;
+        height: 4px;
+        width: 53px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: absolute;
+        top: 77px;
+    }
+    &__active--second:after {
+        content: "";
+        background-color: $brand-color;
+        border-radius: 2px;
+        height: 4px;
+        width: 53px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: absolute;
+        top: 77px;
+        left: 552px;
+    }
+    &__link {
+        text-decoration: none;
+        color: $main-color;
+        display: flex;
+        align-items: center;
+        transition-property: color;
+        transition: $transition;
+        &:hover,
+        &:focus {
+            color: $brand-color;
+        }
+    }
+    .nav__menu > .nav__list:not(:last-child) {
+        margin-right: 46px;
+    }
+}

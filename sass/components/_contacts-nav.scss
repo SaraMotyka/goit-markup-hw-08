@@ -1,0 +1,47 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+
+    &__list {
+        height: 16px;
+    }
+    &__link {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.14em;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $text-color;
+        transition-property: color;
+        transition: $transition;
+        &:hover,
+        &:focus,
+        &:active {
+            color: $brand-color;
+        }
+    }
+    &__icon {
+        fill: $text-color;
+        margin-right: 10px;
+    }
+
+    .contacts > .contacts__list {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+    .contacts__link:hover svg,
+    .contacts__link:focus svg,
+    .contacts__link:active svg {
+        transition-property: fill;
+        transition: $transition;
+        fill: $brand-color;
+    }
+    .contacts__list:not(:last-child) {
+        margin-right: 30px;
+    }
+}
