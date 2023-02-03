@@ -2,11 +2,25 @@
     border-bottom: 1px solid $creamy-color;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     &__container {
-        width: 1200px;
-        height: 80px;
+        width: 480px;
+        height: 60px;
         display: flex;
         justify-content: center;
+    }
+}
+@media (min-width: 768px) {
+    &__container {
+        width: 768px;
+        height: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    &__container {
+        width: 1600px;
+        height: 80px;
     }
 }

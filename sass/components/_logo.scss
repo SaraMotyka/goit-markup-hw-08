@@ -1,18 +1,19 @@
 .logo {
     font-family: "Raleway";
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19em;
+    font-size: 24px;
+    line-height: 1.16em;
     color: $main-color;
     letter-spacing: 0.03em;
     text-decoration: none;
 
     &__nav {
-        width: 145px;
-        height: 31px;
-        margin-top: 24px;
-        margin-bottom: 25px;
-        margin-right: 93px;
+        width: 134px;
+        height: 28px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 276px;
+        margin-left: 15px;
     }
     &__highlight {
         color: $brand-color;
@@ -23,5 +24,26 @@
 
     &__title--footer {
         color: $white-color;
+    }
+}
+@media (min-width: 768px) {
+    &__nav {
+        margin-top: 26px;
+        margin-bottom: 26px;
+        margin-right: 83px;
+    }
+}
+@media (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 31px;
+    }
+    &__nav {
+        width: 145px;
+        height: 31px;
+        margin-top: 24px;
+        margin-bottom: 25px;
+        margin-left: 215;
+        margin-right: 93px;
     }
 }
