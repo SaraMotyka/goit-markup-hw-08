@@ -1,32 +1,55 @@
 .contacts {
-    display: flex;
-    align-items: center;
-    padding-left: 0;
+    display: none;
+}
 
-    &__list {
-        height: 16px;
-    }
-    &__link {
-        font-family: "Roboto";
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 1.14em;
-        text-decoration: none;
+@media (min-width: 768px) {
+    .contacts {
         display: flex;
-        flex-direction: row;
         align-items: center;
+        padding-left: 0;
+
         color: $text-color;
-        transition-property: color;
-        transition: $transition;
-        &:hover,
-        &:focus,
-        &:active {
-            color: $brand-color;
+
+        &__link,
+        &__icon,
+        &__link--second {
+            position: absolute;
+            left: 615px;
+            top: 21px;
+            width: 135px;
+            height: 16px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.14em;
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            color: $text-color;
+            transition-property: color;
+            transition: $transition;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $brand-color;
+            }
         }
-    }
-    &__icon {
-        fill: $text-color;
-        margin-right: 10px;
+        &__link--second {
+            top: 45px;
+            width: 110px;
+        }
+        &__icon {
+            fill: $text-color;
+            left: -25px;
+            top: 3px;
+            margin-right: 10px;
+            width: 14px;
+            height: 10px;
+        }
+        &__icon--second {
+            width: 10px;
+            height: 14px;
+        }
     }
 
     .contacts > .contacts__list {
@@ -41,7 +64,22 @@
         transition: $transition;
         fill: $brand-color;
     }
-    .contacts__list:not(:last-child) {
-        margin-right: 30px;
+}
+
+@media (min-width: 1200px) {
+    .contacts {
+        &__link {
+            left: 1052px;
+            top: 32px;
+        }
+
+        &__link--second {
+            height: 16px;
+            left: 1243px;
+            top: 32px;
+        }
+        &__icon--second {
+            top: 1.09%;
+        }
     }
 }

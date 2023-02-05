@@ -10,10 +10,9 @@
     &__nav {
         width: 134px;
         height: 28px;
-        margin-top: 16px;
-        margin-bottom: 16px;
-        margin-right: 276px;
-        margin-left: 15px;
+        position: absolute;
+        left: 15px;
+        top: 16px;
     }
     &__highlight {
         color: $brand-color;
@@ -27,23 +26,24 @@
     }
 }
 @media (min-width: 768px) {
-    &__nav {
-        margin-top: 26px;
-        margin-bottom: 26px;
+    .logo__nav {
+        top: 26px;
+        bottom: 26px;
         margin-right: 83px;
     }
 }
 @media (min-width: 1200px) {
     .logo {
         font-size: 26px;
-        line-height: 31px;
-    }
-    &__nav {
-        width: 145px;
-        height: 31px;
-        margin-top: 24px;
-        margin-bottom: 25px;
-        margin-left: 215;
-        margin-right: 93px;
+        line-height: 1.19em;
+
+        &__nav {
+            left: 215px;
+            width: 145px;
+            height: 31px;
+            top: 24px;
+            bottom: 25px;
+            margin-right: 93px;
+        }
     }
 }

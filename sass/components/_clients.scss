@@ -1,4 +1,68 @@
 .clients {
+    width: 480px;
+
+    &__header {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.17em;
+        text-align: center;
+        color: $main-color;
+        margin-bottom: 30px;
+        margin-top: 60px;
+    }
+    &__item {
+        width: 210px;
+        height: 92px;
+        margin-right: 0;
+        border: 1px solid $current-color;
+        border-radius: 3px;
+        fill: $current-color;
+        &:hover,
+        &:focus,
+        &:active {
+            border: 1px solid $brand-color;
+        }
+        &__icon {
+            margin-left: 50px;
+        }
+    }
+}
+.clients > .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.clients__item:nth-child(2),
+.clients__item:nth-child(4),
+.clients__item:nth-child(6) {
+    margin-right: 0;
+}
+.clients__item:nth-child(1),
+.clients__item:nth-child(3),
+.clients__item:nth-child(5) {
+    margin-left: 15px;
+}
+
+.clients__item:hover .clients__icon,
+.clients__item:focus .clients__icon,
+.clients__item:active .clients__icon {
+    fill: $brand-color;
+}
+.clients__item svg {
+    border: $current-color;
+    fill: $current-color;
+    transition-property: fill border;
+    transition: $transition;
+}
+.clients__link > .clients__icon {
+    margin-left: 20px;
+}
+
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+}
+
+.clients {
     margin-bottom: 94px;
 
     &__header {

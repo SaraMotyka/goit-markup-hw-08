@@ -1,38 +1,95 @@
 .assets {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     &__list {
-        font-family: "Roboto";
         font-size: 14px;
         line-height: 1.71;
         color: $text-color;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
-        padding-left: 0;
-        padding: auto;
+        align-items: center;
         margin-top: 94px;
+        margin-left: 15px;
+    }
+    &__icon {
+        width: 450px;
+        background-color: $creamy-color;
+        margin-bottom: 30px;
     }
     &__item {
-        width: 270px;
+        display: block;
+        max-width: 450px;
+        margin-left: 15px;
     }
     &__header {
-        font-family: "Roboto";
         font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
         color: $main-color;
         margin-bottom: 10px;
+        text-align: center;
+    }
+    &__text {
+        margin-bottom: 30px;
     }
 }
-.assets > .assets__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (min-width: 768px) {
+    .assets {
+        flex-direction: row;
+
+        &__item {
+            width: 354px;
+        }
+        &__list {
+            flex-direction: row;
+            padding: 0;
+            margin-left: 0;
+            flex-wrap: wrap;
+        }
+        &__icon {
+            width: 354px;
+        }
+        &__header {
+            text-align: start;
+        }
+    }
 }
-.assets__list > .assets__item:not(:last-child) {
+.assets__list .assets__item:nth-child(1) {
     margin-right: 30px;
+}
+.assets__list .assets__item:nth-child(3) {
+    margin-right: 30px;
+}
+.assets__list .assets__item:nth-child(2) {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+.assets__list .assets__item:nth-child(4) {
+    margin-left: 0px;
+    margin-right: 15px;
+}
+@media (min-width: 1200px) {
+    .assets {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 215px;
+
+        &__list {
+            flex-basis: calc((1200px - 90px) / 4);
+            line-height: 1.71;
+        }
+        &__item {
+            width: 270px;
+            gap: 30px;
+            margin-right: 0;
+        }
+        &__icon {
+            width: 270px;
+        }
+    }
 }

@@ -41,10 +41,11 @@
                             >
                                 <svg
                                     width="24"
-                                    height="24"
+                                    height="16"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                     xmlns="http://www.w3.org/2000/svg"
+                                    class="menu__btn"
                                 >
                                     <path
                                         fill-rule="evenodd"
@@ -91,10 +92,10 @@
                                 </li>
                                 <li class="contacts__list">
                                     <a
-                                        class="contacts__link"
+                                        class="contacts__link contacts__link--second"
                                         href="tel:+48111111111"
                                         ><svg
-                                            class="contacts__icon"
+                                            class="contacts__icon contacts__icon--second"
                                             width="10"
                                             height="16"
                                         >
@@ -140,43 +141,67 @@
                                         href="./images/icons.svg/icons.svg#icon-Group-1"
                                     ></use>
                                 </svg>
+
                                 <h3 class="assets__header">LOREM IPSUM</h3>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
+                                <p class="assets__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
                             </li>
                             <li class="assets__item">
-                                <svg class="list-icon" width="270" height="120">
+                                <svg
+                                    class="assets__icon"
+                                    width="270"
+                                    height="120"
+                                >
                                     <use
                                         href="./images/icons.svg/icons.svg#icon-Group-2"
                                     ></use>
                                 </svg>
+
                                 <h3 class="assets__header">LOREM IPSUM</h3>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
+                                <p class="assets__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
                             </li>
                             <li class="assets__item">
-                                <svg class="list-icon" width="270" height="120">
+                                <svg
+                                    class="assets__icon"
+                                    width="270"
+                                    height="120"
+                                >
                                     <use
                                         href="./images/icons.svg/icons.svg#icon-Group-3"
                                     ></use>
                                 </svg>
+
                                 <h3 class="assets__header">LOREM IPSUM</h3>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
+                                <p class="assets__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
                             </li>
                             <li class="assets__item">
-                                <svg class="list-icon" width="270" height="120">
+                                <svg
+                                    class="assets__icon"
+                                    width="270"
+                                    height="120"
+                                >
                                     <use
                                         href="./images/icons.svg/icons.svg#icon-Group-4"
                                     ></use>
                                 </svg>
+
                                 <h3 class="assets__header">LOREM IPSUM</h3>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit. Nam vel arcu sem. Sed non
-                                sodales dui. Interdum et malesuada
+                                <p class="assets__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Nam vel arcu sem. Sed non
+                                    sodales dui. Interdum et malesuada
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -240,356 +265,391 @@
                 <div class="team">
                     <div class="team__box">
                         <h2 class="team__header">Nasz zespół</h2>
+
+                        <ul class="team__members">
+                            <li class="team__list team__description">
+                                <figure class="team__card">
+                                    <img
+                                        src="images/port1.jpg"
+                                        alt="John Doe"
+                                        width="270"
+                                        height="260"
+                                        class="team__img"
+                                    />
+                                    <figcaption class="photo">
+                                        <span class="photo__name">John Doe</span
+                                        ><span class="photo__profession">
+                                            Product Designer</span
+                                        >
+                                        <ul class="social">
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.instagram.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-instagram-2"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://twitter.com/"
+                                                    class="social__link"
+                                                >
+                                                    <div class="social__circle">
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-twitter-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.facebook.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-facebook-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.linkedin.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-linkedin-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="team__list team__description">
+                                <figure class="team__card">
+                                    <img
+                                        src="images/port2.jpg"
+                                        alt="John Doe"
+                                        width="270"
+                                        height="260"
+                                        class="team__img"
+                                    />
+                                    <figcaption class="photo">
+                                        <span class="photo__name">John Doe</span
+                                        ><span class="photo__profession"
+                                            >Frontend Developer</span
+                                        >
+                                        <ul class="social">
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.instagram.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-instagram-2"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://twitter.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-twitter-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.facebook.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-facebook-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.linkedin.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-linkedin-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            <li class="team__list team__description">
+                                <figure class="team__card">
+                                    <img
+                                        src="images/port3.jpg"
+                                        alt="John Doe"
+                                        width="270"
+                                        height="260"
+                                        class="team__img"
+                                    />
+                                    <figcaption class="photo">
+                                        <span class="photo__name">John Doe</span
+                                        ><span class="photo__profession">
+                                            Marketing</span
+                                        >
+                                        <ul class="social">
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.instagram.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-instagram-2"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://twitter.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-twitter-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.facebook.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-facebook-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.linkedin.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-linkedin-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="team__list team__description">
+                                <figure class="team__card">
+                                    <img
+                                        src="images/port4.jpg"
+                                        alt="John Doe"
+                                        width="270"
+                                        height="260"
+                                        class="team__img"
+                                    />
+                                    <figcaption class="photo">
+                                        <span class="photo__name">John Doe</span
+                                        ><span class="photo__profession">
+                                            UI Designer</span
+                                        >
+                                        <ul class="social">
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.instagram.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-instagram-2"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://twitter.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-twitter-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.facebook.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-facebook-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="social__list">
+                                                <a
+                                                    href="https://www.linkedin.com/"
+                                                    class="social__link"
+                                                    ><div
+                                                        class="social__circle"
+                                                    >
+                                                        <svg
+                                                            class="social__icon"
+                                                            width="20"
+                                                            height="20"
+                                                        >
+                                                            <use
+                                                                href="./images/icons.svg/icons.svg#icon-linkedin-1"
+                                                            ></use>
+                                                        </svg>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        </ul>
                     </div>
-                    <ul class="team__members">
-                        <li class="team__list team__description">
-                            <figure>
-                                <img
-                                    src="images/port1.jpg"
-                                    alt="John Doe"
-                                    width="270"
-                                    height="260"
-                                />
-                                <figcaption class="photo">
-                                    <span class="photo__name">John Doe</span
-                                    ><span class="photo__profession">
-                                        Product Designer</span
-                                    >
-                                    <ul class="social">
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.instagram.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-instagram-2"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://twitter.com/"
-                                                class="social__link"
-                                            >
-                                                <div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-twitter-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.facebook.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-facebook-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.linkedin.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-linkedin-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </figure>
-                        </li>
-
-                        <li class="team__list team__description">
-                            <figure>
-                                <img
-                                    src="images/port2.jpg"
-                                    alt="John Doe"
-                                    width="270"
-                                    height="260"
-                                />
-                                <figcaption class="photo">
-                                    <span class="photo__name">John Doe</span
-                                    ><span class="photo__profession"
-                                        >Frontend Developer</span
-                                    >
-                                    <ul class="social">
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.instagram.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-instagram-2"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://twitter.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-twitter-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.facebook.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-facebook-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.linkedin.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-linkedin-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="team__list team__description">
-                            <figure>
-                                <img
-                                    src="images/port3.jpg"
-                                    alt="John Doe"
-                                    width="270"
-                                    height="260"
-                                />
-                                <figcaption class="photo">
-                                    <span class="photo__name">John Doe</span
-                                    ><span class="photo__profession">
-                                        Marketing</span
-                                    >
-                                    <ul class="social">
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.instagram.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-instagram-2"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://twitter.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-twitter-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.facebook.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-facebook-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.linkedin.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-linkedin-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </figure>
-                        </li>
-
-                        <li class="team__list team__description">
-                            <figure>
-                                <img
-                                    src="images/port4.jpg"
-                                    alt="John Doe"
-                                    width="270"
-                                    height="260"
-                                />
-                                <figcaption class="photo">
-                                    <span class="photo__name">John Doe</span
-                                    ><span class="photo__profession">
-                                        UI Designer</span
-                                    >
-                                    <ul class="social">
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.instagram.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-instagram-2"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://twitter.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-twitter-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.facebook.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-facebook-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="social__list">
-                                            <a
-                                                href="https://www.linkedin.com/"
-                                                class="social__link"
-                                                ><div class="social__circle">
-                                                    <svg
-                                                        class="social__icon"
-                                                        width="20"
-                                                        height="20"
-                                                    >
-                                                        <use
-                                                            href="./images/icons.svg/icons.svg#icon-linkedin-1"
-                                                        ></use>
-                                                    </svg>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </figcaption>
-                            </figure>
-                        </li>
-                    </ul>
                 </div>
             </section>
             <!--Clients-->
@@ -708,11 +768,12 @@
         <div class="menu-container js-menu-container" id="mobile-menu">
             <button class="menu-toggle js-close-menu">
                 <svg
-                    fill="currentColor"
+                    fill=""
                     viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
+                    class="btn__close"
                 >
                     <path
                         fill-rule="evenodd"
@@ -722,12 +783,48 @@
                 </svg>
             </button>
 
-            <ul class="mobile-menu">
-                <li><a href="" class="link">About</a></li>
-                <li><a href="" class="link">Products</a></li>
-                <li><a href="" class="link">Contacts</a></li>
-                <li><a href="" class="link">Career</a></li>
-            </ul>
+            <div class="menu">
+                <ul class="mobile-menu">
+                    <li class="menu__modify">
+                        <a href="./index.html" class="link">Agencja</a>
+                    </li>
+                    <li>
+                        <a href="./portfolio.html" class="link">Portfolio</a>
+                    </li>
+                    <li><a href="" class="link">Kontakt</a></li>
+                </ul>
+                <div>
+                    <a class="menu__tel" href="tel:+48111111111"
+                        >+48 111 111 111</a
+                    >
+                    <a class="menu__email" href="mailto:info@devstudio.com"
+                        >info@devstudio.com</a
+                    >
+                </div>
+
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link" href="https://www.instagram.com/"
+                            >Instagram</a
+                        >
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="https://twitter.com/"
+                            >Twitter</a
+                        >
+                    </li>
+                    <li class="menu__item">
+                        <a class="menu__link" href="https://www.facebook.com/"
+                            >Facebook</a
+                        >
+                    </li>
+                    <li>
+                        <a class="menu__link" href="https://www.linkedin.com/"
+                            >LinkedIn</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </div>
         <footer class="footer">
             <section>
