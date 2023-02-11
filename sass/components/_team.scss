@@ -3,14 +3,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
     background-color: $creamy-color;
-    width: 480px;
 
     &__box {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
 
     &__header {
@@ -29,7 +30,6 @@
     }
     &__list {
         display: flex;
-        max-width: 450px;
     }
     &__img {
         display: block;
@@ -51,14 +51,11 @@
     }
 
     &__card {
-        width: 450px;
         padding: 0;
         margin: 0;
     }
 }
-.team__members:last-child {
-    margin-bottom: 60px;
-}
+
 .photo {
     font-size: 16px;
     line-height: 1.18;
@@ -124,47 +121,36 @@
     fill: $white-color;
 }
 figure {
-    width: 450px;
-    height: 622px;
+    height: auto;
     margin-bottom: 30px;
 }
 
 @media (min-width: 768px) {
     .team {
         flex-direction: row;
-        width: 768px;
-        height: 1285px;
+        height: auto;
 
         &__members {
             flex-direction: row;
-            flex-basis: calc((768px - 90px) / 4);
+            gap: 30px;
             flex-wrap: wrap;
+        }
+        &__list {
+            flex-basis: calc((100% - 90px) / 4);
         }
 
         &__card {
             width: 354px;
             height: 536px;
         }
-
-        .team__list:nth-child(1) {
-            margin-right: 30px;
-        }
-        .team__list:nth-child(3) {
-            margin-right: 30px;
-        }
     }
 }
 @media (min-width: 1200px) {
     .team {
         padding: 0;
-        width: 1600px;
-        height: 708px;
-        margin-left: 0;
+        height: auto;
+        min-width: 100vw;
 
-        &__box {
-            position: relative;
-            left: 14px;
-        }
         &__header {
             width: 209px;
             height: 42px;
@@ -189,9 +175,6 @@ figure {
             width: 270px;
             height: 428px;
         }
-    }
-    .team__members > .team__list:not(:last-child) {
-        margin-right: 30px;
     }
 
     figure {

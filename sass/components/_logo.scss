@@ -8,11 +8,9 @@
     text-decoration: none;
 
     &__nav {
-        width: 134px;
-        height: 28px;
         position: absolute;
-        left: 15px;
         top: 16px;
+        left: 15px;
     }
     &__highlight {
         color: $brand-color;
@@ -27,23 +25,6 @@
 }
 @media (min-width: 768px) {
     .logo__nav {
-        top: 26px;
-        bottom: 26px;
-        margin-right: 83px;
-    }
-}
-@media (min-width: 1200px) {
-    .logo {
-        font-size: 26px;
-        line-height: 1.19em;
-
-        &__nav {
-            width: 145px;
-            height: 31px;
-            top: 24px;
-            bottom: 25px;
-            margin-right: 93px;
-            left: 225px;
-        }
+        margin-top: 10px;
     }
 }

@@ -1,5 +1,6 @@
 .actions {
     display: none;
+    width: 100vw;
 }
 @media (min-width: 768px) {
     .actions {
@@ -14,11 +15,8 @@
         align-items: center;
         margin: 0;
         margin-bottom: 94px;
-        position: relative;
-        left: 215px;
 
         &__header {
-            font-family: "Roboto";
             font-size: 36px;
             font-weight: 700;
             line-height: 1.16;
@@ -32,14 +30,11 @@
             margin-left: 15px;
         }
         &__list {
-            width: 1170px;
             display: flex;
             justify-content: center;
             margin-bottom: 94px;
             margin: 0;
-            padding: 0;
-            width: 370px;
-            height: 294px;
+            gap: 30px;
         }
         &__box {
             position: relative;
@@ -64,7 +59,4 @@
             padding: 27px 90px;
         }
     }
-}
-.actions__list > .actions__images:not(:last-child) {
-    margin-right: 30px;
 }

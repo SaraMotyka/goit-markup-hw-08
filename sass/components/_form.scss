@@ -11,6 +11,8 @@
         color: $primary-color;
         margin-top: 40px;
         margin-bottom: 12px;
+        width: 370px;
+        margin-left: 40px;
     }
     &__label {
         margin-left: 40px;
@@ -85,7 +87,7 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         margin-left: 125px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         cursor: pointer;
     }
 
@@ -165,6 +167,7 @@ textarea {
         &__header {
             white-space: nowrap;
             line-height: 1.17em;
+            width: 448px;
         }
         &__input {
             width: 448px;

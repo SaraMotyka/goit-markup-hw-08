@@ -15,25 +15,20 @@ li {
 section {
     max-width: 767px;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-    body {
+
+@media (min-width: 768px) {
+    section {
         max-width: 1199px;
     }
     .container {
         max-width: 768px;
     }
-    section {
-        max-width: 1199px;
-    }
 }
 @media (min-width: 1200px) {
-    body {
+    section {
         max-width: 1600px;
     }
     .container {
-        max-width: 1200px;
-    }
-    section {
-        max-width: 1600px;
+        min-width: 1200px;
     }
 }

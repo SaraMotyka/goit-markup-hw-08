@@ -24,9 +24,8 @@
 
         &__menu {
             display: flex;
-            align-items: center;
-            padding-left: 0;
         }
+
         &__list {
             font-weight: 500;
             font-size: 14px;
@@ -86,7 +85,7 @@
 }
 
 .nav__menu > .nav__list:not(:last-child) {
-    margin-right: 46px;
+    margin-right: 60px;
 }
 .nav__menu:first-child {
     color: $brand-color;
@@ -94,13 +93,11 @@
 
 @media (min-width: 1200px) {
     .nav {
-        &__menu {
-            margin-right: 345px;
-            position: relative;
-            left: 215px;
-        }
+        width: 100vw;
+        margin-left: 250px;
+
         &__active:after {
-            top: 45px;
+            top: 77px;
         }
     }
 }
