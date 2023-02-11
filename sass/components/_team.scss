@@ -32,8 +32,9 @@
         max-width: 450px;
     }
     &__img {
-        width: 450px;
-        height: 460px;
+        display: block;
+        width: 100%;
+        height: auto;
     }
     &__description {
         color: $text-color;
@@ -139,10 +140,7 @@ figure {
             flex-basis: calc((768px - 90px) / 4);
             flex-wrap: wrap;
         }
-        &__img {
-            width: 354px;
-            height: 374px;
-        }
+
         &__card {
             width: 354px;
             height: 536px;
@@ -186,10 +184,7 @@ figure {
         &__list {
             width: 270px;
         }
-        &__img {
-            width: 270px;
-            height: 260px;
-        }
+
         &__card {
             width: 270px;
             height: 428px;
