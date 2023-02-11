@@ -136,7 +136,7 @@ figure {
 
         &__members {
             flex-direction: row;
-            flex-basis: ((768px - 90px)/4);
+            flex-basis: calc((768px - 90px) / 4);
             flex-wrap: wrap;
         }
         &__img {

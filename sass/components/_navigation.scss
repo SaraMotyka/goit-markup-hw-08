@@ -95,9 +95,9 @@
 @media (min-width: 1200px) {
     .nav {
         &__menu {
-            position: absolute;
-            left: 453px;
             margin-right: 345px;
+            position: relative;
+            left: 215px;
         }
         &__active:after {
             top: 45px;

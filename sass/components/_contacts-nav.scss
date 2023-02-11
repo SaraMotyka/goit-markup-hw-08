@@ -68,15 +68,19 @@
 
 @media (min-width: 1200px) {
     .contacts {
+        position: absolute;
+        left: 0;
+        top: 0;
+
         &__link {
-            left: 1052px;
             top: 32px;
+            left: 1052px;
         }
 
         &__link--second {
             height: 16px;
-            left: 1243px;
             top: 32px;
+            left: 1243px;
         }
         &__icon--second {
             top: 1.09%;

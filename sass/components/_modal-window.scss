@@ -1,6 +1,6 @@
 .main__button {
-    color: $main-color;
-    background-color: $creamy-color;
+    color: $white-color;
+    background-color: $brand-color;
     cursor: pointer;
     border: none;
     border-radius: 4px;
@@ -9,17 +9,6 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.8;
-    font-family: "Roboto";
-    transition-property: color background-color;
-    transition: $transition;
-
-    &:hover,
-    &:focus,
-    &:active {
-        background-color: $brand-color;
-        color: $white-color;
-        border: none;
-    }
 }
 
 .backdrop {
@@ -45,8 +34,7 @@
     opacity: 0;
 }
 .modal__window {
-    width: 528px;
-    height: 581px;
+    width: 450px;
     background: $white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -74,11 +62,28 @@
     padding: 6px;
     background-color: $white-color;
     cursor: pointer;
-    position: absolute;
-    top: 8px;
-    left: 490px;
+    position: relative;
+    top: -550px;
+    left: 410px;
 }
 .button__close-X {
     color: $main-color;
-    font-size: 15px;
+    font-size: 20px;
+    position: relative;
+    top: -5px;
+}
+@media (min-width: 1200px) {
+    .modal__window {
+        width: 528px;
+        height: 581px;
+    }
+    .modal__btn-close {
+        left: 0px;
+        left: 490px;
+        top: -562px;
+    }
+    .button__close-X {
+        font-size: 26px;
+        top: -10px;
+    }
 }

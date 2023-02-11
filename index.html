@@ -785,8 +785,10 @@
 
             <div class="menu">
                 <ul class="mobile-menu">
-                    <li class="menu__modify">
-                        <a href="./index.html" class="link">Agencja</a>
+                    <li>
+                        <a href="./index.html" class="link link__first"
+                            >Agencja</a
+                        >
                     </li>
                     <li>
                         <a href="./portfolio.html" class="link">Portfolio</a>
@@ -828,9 +830,9 @@
         </div>
         <footer class="footer">
             <section>
-                <div class="container">
+                <div class="container ftr__container">
                     <div class="footer__box">
-                        <ul>
+                        <ul class="footer__wrapper">
                             <li class="footer__logo">
                                 <a class="logo" href="index.html"
                                     ><span class="logo__highlight">Web</span
@@ -933,27 +935,27 @@
                                 </li>
                             </ul>
                         </div>
-                        <form>
-                            <label
-                                ><h3 class="newsletter">
-                                    ZAPISZ SIĘ DO NEWSLETTERA
-                                </h3>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    placeholder="E-mail"
-                                    class="newsletter__input text__input"
-                            /></label>
-                            <button class="newsletter__btn" type="submit">
-                                <span class="sign__up">Zapisz się</span>
-                                <svg class="newsletter__icon">
-                                    <use
-                                        href="./images/icons.svg/icons1.svg#icon-icon-send"
-                                    ></use>
-                                </svg>
-                            </button>
-                        </form>
                     </div>
+                    <form class="newsletter__form">
+                        <label class="newsletter__label"
+                            ><h3 class="newsletter">
+                                ZAPISZ SIĘ DO NEWSLETTERA
+                            </h3>
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="E-mail"
+                                class="newsletter__input text__input"
+                        /></label>
+                        <button class="newsletter__btn" type="submit">
+                            <span class="sign__up">Zapisz się</span>
+                            <svg class="newsletter__icon">
+                                <use
+                                    href="./images/icons.svg/icons1.svg#icon-icon-send"
+                                ></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
             </section>
         </footer>
