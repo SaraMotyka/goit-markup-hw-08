@@ -1,6 +1,5 @@
 .clients {
     padding-bottom: 60px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +18,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -54,41 +54,32 @@
     display: flex;
     flex-wrap: wrap;
 }
+.clients__item .clients__icon {
+    padding-left: 20px;
+}
 
 @media (min-width: 768px) {
     .clients {
         display: flex;
-        flex-direction: column;
 
         &__item {
             flex-basis: calc((100% - 60px) / 3);
         }
-        &__list {
-            padding-left: 0;
-        }
     }
 }
+
 @media (min-width: 1200px) {
     .clients {
-        max-width: 100vw;
-        padding-top: 94px;
-        padding-bottom: 94px;
-        display: flex;
-        flex-direction: column;
-
         &__header {
             font-size: 36px;
             line-height: 1.16;
             margin-bottom: 50px;
         }
         &__list {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
             gap: 30px;
         }
         &__item {
-            flex-basis: calc((1200px - 150px) / 6);
+            max-width: 170px;
         }
     }
 }

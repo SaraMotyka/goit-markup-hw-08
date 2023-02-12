@@ -1,7 +1,7 @@
 .assets {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    padding-left: 15px;
 
     &__list {
         font-size: 14px;
@@ -19,11 +19,13 @@
         margin-bottom: 30px;
     }
     &__item {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         width: calc(100vw - 30px);
-        padding-left: 15px;
     }
     &__header {
+        width: fit-content;
         font-size: 14px;
         font-weight: 700;
         line-height: 1.14;
@@ -39,45 +41,45 @@
 
 @media (min-width: 768px) {
     .assets {
-        flex-direction: row;
+        display: flex;
 
         &__list {
-            flex-direction: row;
-            flex-wrap: wrap;
             gap: 30px;
+            display: flex;
+            flex-direction: row;
         }
+        &__item {
+            flex-basis: calc((100% - 60px) / 2);
+            justify-content: center;
+        }
+
         &__icon {
             width: calc((100vw - 60px) / 2);
-            max-width: 450px;
+            max-width: 354px;
             min-height: 50px;
         }
-        &__header {
-            text-align: start;
-        }
+
         &__text {
             margin-bottom: 30px;
-            max-width: 450px;
+            max-width: 354px;
         }
     }
 }
-
+.assets > .assets__list {
+    display: flex;
+    flex-wrap: wrap;
+}
 @media (min-width: 1200px) {
     .assets {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0px;
-        margin-left: 15px;
-
         &__list {
-            gap: 30px;
             line-height: 1.71;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
         }
         &__item {
-            flex-basis: calc((1200px - 90px) / 4);
+            flex-basis: calc((100% - 90px) / 4);
+            max-width: 270px;
+        }
+        &__icon {
+            max-width: 270px;
         }
     }
 }

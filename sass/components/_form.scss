@@ -32,14 +32,14 @@
         width: 18px;
         height: 18px;
         margin-top: 11px;
-        margin-left: 12px;
+        margin-left: 47px;
     }
     &__input {
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
         width: 370px;
         height: 40px;
-        padding-left: 42px;
+        margin-left: 40px;
         outline: none;
         transition-property: border-color;
         transition-duration: 250ms;
@@ -58,6 +58,7 @@
         border-radius: 4px;
         padding-top: 12px;
         padding-left: 16px;
+        margin-left: 40px;
         outline: none;
         transition-property: border-color;
         transition-duration: 250ms;

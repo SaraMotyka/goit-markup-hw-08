@@ -9,8 +9,10 @@
 
     &__nav {
         position: absolute;
-        top: 16px;
+        width: 134px;
+        height: 28px;
         left: 15px;
+        top: 16px;
     }
     &__highlight {
         color: $brand-color;
@@ -25,6 +27,11 @@
 }
 @media (min-width: 768px) {
     .logo__nav {
-        margin-top: 10px;
+        top: 26px;
+    }
+}
+@media (min-width: 1200px) {
+    .logo__nav {
+        left: 45px;
     }
 }

@@ -1,6 +1,5 @@
 .actions {
     display: none;
-    width: 100vw;
 }
 @media (min-width: 768px) {
     .actions {
@@ -9,6 +8,7 @@
 }
 @media (min-width: 1200px) {
     .actions {
+        width: 100%;
         display: flex;
         flex-direction: column;
 

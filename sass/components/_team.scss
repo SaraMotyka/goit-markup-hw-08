@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     background-color: $creamy-color;
+    min-width: 100%;
 
     &__box {
         display: flex;
@@ -127,30 +127,38 @@ figure {
 
 @media (min-width: 768px) {
     .team {
+        display: flex;
         flex-direction: row;
-        height: auto;
+        padding-left: 15px;
+        padding-right: 15px;
 
         &__members {
+            display: flex;
             flex-direction: row;
             gap: 30px;
-            flex-wrap: wrap;
         }
         &__list {
-            flex-basis: calc((100% - 90px) / 4);
+            max-width: 354px;
+            flex-basis: calc((100% - 60px) / 2);
         }
 
         &__card {
             width: 354px;
-            height: 536px;
+            min-height: 536px;
         }
     }
 }
+.team .team__members {
+    display: flex;
+    flex-wrap: wrap;
+}
+figure {
+    max-width: 354px;
+    max-height: 536px;
+}
+
 @media (min-width: 1200px) {
     .team {
-        padding: 0;
-        height: auto;
-        min-width: 100vw;
-
         &__header {
             width: 209px;
             height: 42px;
@@ -162,23 +170,21 @@ figure {
             white-space: nowrap;
         }
         &__members {
-            flex-wrap: nowrap;
-            flex-direction: row;
             padding-bottom: 94px;
-            margin: 0;
         }
         &__list {
-            width: 270px;
+            max-width: 270px;
+            max-height: 428px;
         }
 
         &__card {
-            width: 270px;
-            height: 428px;
+            max-width: 270px;
+            max-height: 428px;
         }
     }
 
     figure {
-        width: 270px;
-        height: 428px;
+        max-width: 270px;
+        max-height: 428px;
     }
 }

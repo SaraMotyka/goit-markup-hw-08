@@ -965,10 +965,8 @@
                         </div>
                     </div>
                     <form class="newsletter__form">
-                        <label class="newsletter__label"
-                            ><h3 class="newsletter">
-                                ZAPISZ SIĘ DO NEWSLETTERA
-                            </h3>
+                        <label class="newsletter__label newsletter"
+                            >ZAPISZ SIĘ DO NEWSLETTERA
                             <input
                                 type="email"
                                 name="email"
@@ -994,60 +992,51 @@
                     Zostaw swoje dane w formularzu poniżej
                 </h2>
                 <form class="form">
-                    <label class="form__label"
-                        ><p class="form__data">Imię</p>
-                        <div class="form__container">
-                            <svg class="form__icon">
-                                <use
-                                    href="./images/icons.svg/icons1.svg#icon-person-black-18dp-1"
-                                ></use>
-                            </svg>
-                            <input
-                                type="text"
-                                name="userName"
-                                class="form__input"
-                            />
-                        </div>
-                    </label>
-                    <label class="form__label"
-                        ><p class="form__data">Telefon</p>
-                        <div class="form__container">
-                            <svg class="form__icon">
-                                <use
-                                    href="./images/icons.svg/icons1.svg#icon-phone-black-18dp-1"
-                                ></use>
-                            </svg>
-                            <input
-                                type="tel"
-                                name="userTel"
-                                class="form__input"
-                            /></div
-                    ></label>
-                    <label class="form__label"
-                        ><p class="form__data">Email</p>
-                        <div class="form__container">
-                            <svg class="form__icon">
-                                <use
-                                    href="./images/icons.svg/icons1.svg#icon-email-black-18dp-1"
-                                ></use>
-                            </svg>
-                            <input
-                                type="email"
-                                name="userEmail"
-                                class="form__input"
-                            /></div
-                    ></label>
-                    <label class="form__label"
-                        ><p class="form__data">Komentarz</p>
-                        <div class="form__container">
-                            <textarea
-                                rows="8"
-                                name="comment"
-                                class="form__input2 message"
-                                placeholder="Wprowadź tekst"
-                            ></textarea>
-                        </div>
-                    </label>
+                    <label class="form__label form__data">Imię</label>
+                    <div class="form__container">
+                        <svg class="form__icon">
+                            <use
+                                href="./images/icons.svg/icons1.svg#icon-person-black-18dp-1"
+                            ></use>
+                        </svg>
+                        <input
+                            type="text"
+                            name="userName"
+                            class="form__input"
+                        />
+                    </div>
+
+                    <label class="form__label form__data">Telefon</label>
+                    <div class="form__container">
+                        <svg class="form__icon">
+                            <use
+                                href="./images/icons.svg/icons1.svg#icon-phone-black-18dp-1"
+                            ></use>
+                        </svg>
+                        <input type="tel" name="userTel" class="form__input" />
+                    </div>
+                    <label class="form__label form__data">Email</label>
+                    <div class="form__container">
+                        <svg class="form__icon">
+                            <use
+                                href="./images/icons.svg/icons1.svg#icon-email-black-18dp-1"
+                            ></use>
+                        </svg>
+                        <input
+                            type="email"
+                            name="userEmail"
+                            class="form__input"
+                        />
+                    </div>
+                    <label class="form__label form__data">Komentarz</label>
+                    <div class="form__container">
+                        <textarea
+                            rows="8"
+                            name="comment"
+                            class="form__input2 message"
+                            placeholder="Wprowadź tekst"
+                        ></textarea>
+                    </div>
 
                     <div class="checkbox">
                         <input
@@ -1072,7 +1061,7 @@
                 </form>
 
                 <button type="button" class="modal__btn-close" data-modal-close>
-                    <div class="button__close-X">x</div>
+                    <span class="button__close-X">x</span>
                 </button>
             </div>
         </div>
