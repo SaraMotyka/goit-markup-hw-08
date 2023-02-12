@@ -1,6 +1,9 @@
 .clients {
     padding-bottom: 60px;
-    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     &__header {
         width: fit-content;
@@ -13,11 +16,14 @@
     }
     &__list {
         gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
     &__item {
-        max-width: 210px;
-        min-width: auto;
-        height: auto;
+        justify-content: center;
         border: 1px solid $current-color;
         border-radius: 3px;
         fill: $current-color;
@@ -29,15 +35,8 @@
         flex-basis: calc((100% - 30px) / 2);
     }
     &__icon {
-        min-width: auto;
+        min-height: 50px;
     }
-}
-.clients > .clients__list {
-    display: flex;
-    flex-wrap: wrap;
-}
-.clients__link > .clients__icon {
-    margin-left: 20px;
 }
 
 .clients__item:hover .clients__icon,
@@ -51,19 +50,21 @@
     transition-property: fill border;
     transition: $transition;
 }
+.clients > .clients__list {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 @media (min-width: 768px) {
     .clients {
         display: flex;
         flex-direction: column;
-        justify-content: baseline;
-        align-items: center;
+
         &__item {
-            max-width: 226px;
             flex-basis: calc((100% - 60px) / 3);
         }
         &__list {
-            margin: auto;
+            padding-left: 0;
         }
     }
 }
@@ -74,13 +75,10 @@
         padding-bottom: 94px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        padding-left: 0px;
 
         &__header {
             font-size: 36px;
             line-height: 1.16;
-            margin: 0;
             margin-bottom: 50px;
         }
         &__list {
@@ -88,14 +86,9 @@
             flex-direction: row;
             flex-wrap: nowrap;
             gap: 30px;
-            padding-left: 0;
         }
         &__item {
-            max-width: 170px;
             flex-basis: calc((1200px - 150px) / 6);
         }
-    }
-    .clients__link > .clients__icon {
-        margin-left: 0px;
     }
 }

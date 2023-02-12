@@ -1,7 +1,6 @@
 .assets {
     display: flex;
     flex-direction: column;
-
     width: 100vw;
 
     &__list {
@@ -10,7 +9,6 @@
         color: $text-color;
         display: flex;
         flex-direction: column;
-
         margin-top: 94px;
     }
     &__icon {
@@ -22,8 +20,8 @@
     }
     &__item {
         display: block;
+        width: calc(100vw - 30px);
         padding-left: 15px;
-        padding-right: 15px;
     }
     &__header {
         font-size: 14px;
@@ -31,7 +29,7 @@
         line-height: 1.14;
         color: $main-color;
         margin-bottom: 10px;
-        padding-left: 180px;
+        text-align: center;
     }
     &__text {
         margin-bottom: 30px;
@@ -47,11 +45,18 @@
             flex-direction: row;
             flex-wrap: wrap;
             gap: 30px;
-            padding-left: 0;
         }
-
+        &__icon {
+            width: calc((100vw - 60px) / 2);
+            max-width: 450px;
+            min-height: 50px;
+        }
         &__header {
             text-align: start;
+        }
+        &__text {
+            margin-bottom: 30px;
+            max-width: 450px;
         }
     }
 }
