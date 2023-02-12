@@ -117,11 +117,10 @@
         padding-left: 16px;
         padding-top: 15px;
         padding-bottom: 15px;
-        margin-left: 15px;
-        margin-right: 15px;
         margin-bottom: 20px;
-        width: 450px;
-        height: 50px;
+        width: calc(100vw - 30px);
+        max-width: 450px;
+        min-height: 50px;
         outline: none;
         transition-property: border-color;
         transition: $transition;
@@ -182,9 +181,6 @@
         &__wrapper {
             margin-right: 144px;
         }
-        &__input {
-            max-width: 450px;
-        }
     }
     .newsletter {
         &__form {
@@ -209,8 +205,8 @@
     .ftr__container {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        margin-left: 0;
+        margin-left: 0px;
+        margin-left: 30px;
     }
     .media {
         margin-top: 0;

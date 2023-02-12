@@ -1,6 +1,7 @@
 .assets {
     display: flex;
     flex-direction: column;
+
     width: 100vw;
 
     &__list {
@@ -9,19 +10,20 @@
         color: $text-color;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
         margin-top: 94px;
-        padding-left: 15px;
     }
     &__icon {
-        width: 450px;
+        width: calc(100vw - 30px);
+        max-width: 450px;
+        min-height: 50px;
         background-color: $creamy-color;
         margin-bottom: 30px;
     }
     &__item {
         display: block;
-        flex-basis: calc((100% - 60px) / 2);
+        padding-left: 15px;
+        padding-right: 15px;
     }
     &__header {
         font-size: 14px;
@@ -29,10 +31,11 @@
         line-height: 1.14;
         color: $main-color;
         margin-bottom: 10px;
-        text-align: center;
+        padding-left: 180px;
     }
     &__text {
         margin-bottom: 30px;
+        max-width: 450px;
     }
 }
 
@@ -46,13 +49,7 @@
             gap: 30px;
             padding-left: 0;
         }
-        &__item {
-            max-width: 354px;
-        }
 
-        &__icon {
-            width: 354px;
-        }
         &__header {
             text-align: start;
         }
@@ -64,8 +61,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-left: 15px;
-        padding-right: 15px;
+        margin-left: 0px;
+        margin-left: 15px;
+
         &__list {
             gap: 30px;
             line-height: 1.71;
@@ -75,9 +73,6 @@
         }
         &__item {
             flex-basis: calc((1200px - 90px) / 4);
-        }
-        &__icon {
-            max-width: 270px;
         }
     }
 }

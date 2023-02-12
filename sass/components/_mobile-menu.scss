@@ -1,11 +1,13 @@
 .menu-toggle {
     border: none;
     box-shadow: none;
+    cursor: pointer;
 }
 .menu-toggle:focus {
     background-color: $white-color;
     border: none;
 }
+
 .menu-container {
     position: fixed;
     top: 0;
@@ -51,7 +53,9 @@
     color: $primary-color;
     text-decoration: none;
 }
-.mobile-menu .link__first {
+.link__first:hover,
+.link__first:focus,
+.link__first:active {
     color: $brand-color;
 }
 .link {
@@ -62,6 +66,12 @@
 }
 .btn__close {
     background-color: $white-color;
+    cursor: pointer;
+}
+.btn__close:hover,
+.btn__close:focus,
+.btn__close:active {
+    fill: $brand-color;
 }
 .menu {
     &__btn {
@@ -128,6 +138,11 @@
     &__item {
         border-right: 1px solid $mobile-menu-color;
     }
+}
+.menu-toggle:hover > .menu__btn,
+.menu-toggle:focus > .menu__btn,
+.menu-toggle:active > .menu__btn {
+    fill: $brand-color;
 }
 @media (min-width: 768px) {
     .menu-container {

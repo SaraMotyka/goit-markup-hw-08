@@ -1,7 +1,7 @@
 body {
     font-family: "Roboto", sans-serif;
     min-width: 320px;
-    max-width: 767px;
+    max-width: 1600px;
     position: relative;
 }
 .container {
@@ -17,6 +17,9 @@ section {
 }
 
 @media (min-width: 768px) {
+    body {
+        max-width: 1199px;
+    }
     section {
         max-width: 1199px;
     }
@@ -25,6 +28,9 @@ section {
     }
 }
 @media (min-width: 1200px) {
+    body {
+        max-width: 1600px;
+    }
     section {
         max-width: 1600px;
     }

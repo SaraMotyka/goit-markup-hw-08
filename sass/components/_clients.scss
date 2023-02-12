@@ -1,13 +1,12 @@
 .clients {
     padding-bottom: 60px;
     width: 100vw;
-    padding-left: 15px;
 
     &__header {
+        width: fit-content;
         font-weight: 700;
         font-size: 28px;
         line-height: 1.17em;
-        text-align: center;
         color: $main-color;
         margin-bottom: 30px;
         margin-top: 60px;
@@ -55,19 +54,26 @@
 
 @media (min-width: 768px) {
     .clients {
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
         &__item {
             max-width: 226px;
             flex-basis: calc((100% - 60px) / 3);
+        }
+        &__list {
+            margin: auto;
         }
     }
 }
 @media (min-width: 1200px) {
     .clients {
+        max-width: 100vw;
         padding-top: 94px;
         padding-bottom: 94px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         padding-left: 0px;
 

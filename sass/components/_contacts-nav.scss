@@ -5,26 +5,25 @@
 @media (min-width: 768px) {
     .contacts {
         display: flex;
-        align-items: center;
-        padding-left: 0;
-
+        flex-direction: column;
         color: $text-color;
+        margin-top: 10px;
 
+        &__list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
         &__link,
         &__icon,
         &__link--second {
-            position: absolute;
-            left: 615px;
-            top: 21px;
             width: 135px;
             height: 16px;
+
             font-size: 14px;
             font-weight: 500;
             line-height: 1.14em;
             text-decoration: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             color: $text-color;
             transition-property: color;
             transition: $transition;
@@ -35,27 +34,28 @@
             }
         }
         &__link--second {
-            top: 45px;
             width: 110px;
         }
         &__icon {
+            display: block;
+            position: absolute;
+            right: 160px;
+            top: 20px;
             fill: $text-color;
-            left: -25px;
-            top: 3px;
-            margin-right: 10px;
             width: 14px;
             height: 10px;
         }
         &__icon--second {
             width: 10px;
             height: 14px;
+            top: 45px;
+            right: 165px;
         }
     }
-
-    .contacts > .contacts__list {
+    .contacts__list > .contacts__link {
         display: flex;
-        align-items: center;
-        flex-direction: row;
+        flex-direction: column;
+        justify-content: flex-start;
     }
     .contacts__link:hover svg,
     .contacts__link:focus svg,
@@ -69,20 +69,9 @@
 @media (min-width: 1200px) {
     .contacts {
         display: flex;
-        position: absolute;
-
-        &__link {
-            top: -7px;
-            left: 630px;
-        }
 
         &__link--second {
             height: 16px;
-            top: -7px;
-            left: 820px;
-        }
-        &__icon--second {
-            top: 1.09%;
         }
     }
 }
